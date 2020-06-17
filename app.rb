@@ -6,9 +6,9 @@ class App < Sinatra::Base
     erb :food_form
   end
 
-  post '/food' do
+  post '/food' do #this is posting data to our browser by using string interpolation
     "My name is #{params[:name]}, and I love #{params[:favorite_food]}."
   end
-  
+
 
 end
